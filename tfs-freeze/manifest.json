@@ -1,0 +1,30 @@
+{
+    "name"             : "TFS Freeze",
+    "description"      : "Disable autorefresh on TFS pages",
+    "manifest_version" : 2,
+    "background"       : 
+    {
+        "scripts" : ["background.js"]
+    },
+    "permissions"      : ["storage", "tabs", "activeTab"],
+    "version"          : "1.0.0",
+    "applications"     : 
+    {
+        "gecko"                  : 
+        {
+            "id"                 : "tfs-freeze@mozilla.org",
+            "strict_min_version" : "57.0a1"
+        }
+    },
+    "icons"              :
+    {
+        "16" : "icons/icon-16.png"
+    },
+    "browser_action"     : 
+    {
+        "default_icon"   :
+        {
+            "16" : "icons/icon-16.png"
+        }
+    }
+}
