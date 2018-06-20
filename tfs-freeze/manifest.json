@@ -8,14 +8,6 @@
     },
     "permissions"      : ["storage", "tabs", "activeTab"],
     "version"          : "1.0.0",
-    "applications"     : 
-    {
-        "gecko"                  : 
-        {
-            "id"                 : "tfs-freeze@mozilla.org",
-            "strict_min_version" : "57.0a1"
-        }
-    },
     "icons"              :
     {
         "16" : "icons/icon-16.png"
