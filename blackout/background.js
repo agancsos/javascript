@@ -24,13 +24,9 @@ function toggleBlackout() {
                 }
             }
         }`;
-    var windowInfo = browser.tabs.executeScript({
+    var windowInfo = chrome.tabs.executeScript({
         code: myCode,
         allFrames: true        
       });
-      windowInfo.then(dummy);
 }
-function dummy() {
-
-}
-browser.browserAction.onClicked.addListener(toggleBlackout);
+chrome.browserAction.onClicked.addListener(toggleBlackout);
