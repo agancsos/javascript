@@ -3,7 +3,7 @@ function toggleBlackout() {
         if(document.getElementsByTagName('body')[0].style.backgroundColor != ''){
             document.getElementsByTagName('body')[0].style.backgroundColor=''
 
-            var tags = ['div', 'li', 'table', 'form', p, span, a];
+            var tags = ['div', 'li', 'table', 'form', 'p', 'span', 'a'];
 
             for(tag in tags) {
                 for(instance in document.getElementsByTagName(tags[tag])){
@@ -15,7 +15,7 @@ function toggleBlackout() {
         else{
             document.getElementsByTagName('body')[0].style.backgroundColor='black'
 
-            var tags = ['div', 'li', 'table', 'form', p, span, a];
+            var tags = ['div', 'li', 'table', 'form', 'p', 'span', 'a'];
 
             for(tag in tags) {
                 for(instance in document.getElementsByTagName(tags[tag])){
