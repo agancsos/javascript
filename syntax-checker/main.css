@@ -1,0 +1,172 @@
+* {
+    margin : 0;
+    padding : 0;
+    border : 0;
+    clear: none;
+}
+
+/********************************************************************************/
+/*                                COMMON                                        */
+/********************************************************************************/
+html, body {
+    height: 100%;
+    width : 100%;
+    overflow-x : hidden;
+}
+
+.logo {
+    font-size : 18pt;
+    color : white;
+    font-family: "Consolas";
+}
+
+.logo:before {
+    content : "import ";
+}
+
+.logo:after {
+    content : ";";
+}
+/********************************************************************************/
+
+/********************************************************************************/
+/*                                  DIVS                                        */
+/********************************************************************************/
+div {
+    position : relative;
+}
+#banner, #links, #main, #footer {
+    width : 100%;
+}
+
+#banner-inner, #links-inner, #main-inner {
+    width : 80%;
+    left : 10%;
+}
+
+#banner {
+    padding-top : 20px;
+    padding-bottom : 20px;
+    background-color: darkgreen;
+}
+
+#links {
+    height : 30px;
+}
+
+#main {
+    min-height : 88%;
+}
+
+#main-inner {
+    display : flex;
+    flex-direction: column;
+    min-height : 100%;
+}
+
+#editor-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    resize : vertical;
+    display: flex;
+    flex : 1;
+    box-sizing: border-box;
+    border: 3px solid black;
+    resize : vertical;
+}
+
+#editor-ruler {
+    border : 3px solid black;
+    background-color: grey;
+    height: 100%;
+}
+
+#editor {
+    width: 100%;
+    height : 100%;
+    flex: 1;
+}
+
+#error-container {
+    min-height: 400px;
+    height: 49%;
+    box-sizing: border-box;
+    border: 3 solid black;
+    background-color: blue;
+    color : white;
+}
+
+#resizer {
+    background-color: cadetblue;
+    height : 40px;
+    cursor : ns-resize;
+}
+
+#footer {
+    text-align: center;
+    font-size: 8pt;
+    padding-top: 20px;
+    bottom : 1;
+    height : 40px;
+    padding-bottom: 20px;
+    background-color: black;
+    color: grey
+}
+/********************************************************************************/
+
+/********************************************************************************/
+/*                                  LINK                                        */
+/********************************************************************************/
+a {
+    text-decoration : none;
+    color : #3399cc;
+}
+/********************************************************************************/
+
+/********************************************************************************/
+/*                                  TABL                                        */
+/********************************************************************************/
+#error-list-table {
+    width : 100%;
+    border-collapse: collapse;
+}
+#error-list-table th,td {
+    text-align: left;
+}
+/********************************************************************************/
+
+/********************************************************************************/
+/*                                  FORM                                        */
+/********************************************************************************/
+#code-form {
+    width : 100%;
+    box-sizing: border-box;
+}
+
+#code-form label {
+    display : block;
+}
+
+#langs, #reset-button, #pause-button {
+    width : 33.1%;
+    height : 40px;
+    padding : 0;
+    border : 1px solid black;
+}
+
+#code {
+    background-color : black;
+    color : darkolivegreen;
+    font-family: monospace;
+    font-size: 14pt;
+    resize : vertical;
+    min-height : 500px;
+    position: relative;
+    width : 100%;
+    box-sizing: border-box;
+    display: block;
+    line-height: 16pt;
+}
+/********************************************************************************/

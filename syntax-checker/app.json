@@ -1,0 +1,17 @@
+{
+    "name" : "Syntax Checker",
+    "logo" : "Syntax-Checker",
+    "version" : "1.0.0",
+    "languages" : [
+        "Parsers",
+        "C++", 
+        "C#",
+        "Java", 
+        "PHP", 
+        "Python",
+        "JavaScript", 
+        "Swift", 
+        "Bash", 
+        "Batch"
+    ]
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="title" content="Include Test" />
+        <emta name="author" content="Abel Gancsos" />
+        <meta name="version" content="1.0.0" />
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+        <link href="main.css" type="text/css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="common-functions.js" type="text/javascript"></script>
+        <script src="framework.js" type="text/javascript"></script>
+        <title>Syntax Checker</title>
+    </head>
+    <body onload="EventService.bootstrap()">
+        <div id="banner">
+            <div id="banner-inner">
+                <a href="./index.html"><h1 class="logo"><script>document.write(SR.__LOGO_TEXT__);</script></h1></a>
+            </div>
+        </div>
+
+        <div id="links">
+            <div id="links-inner">
+
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="main-inner">
+                <div id = "tools">
+                    <button id = "pause-button" onclick="EventService.setPaused()">Pause</button>
+                    <button id = "reset-button" onclick="EventService.reset()">Reset</button>
+                    <select id = "langs" onchange="EventService.changeLangugage(this.value)"></select>
+                </div>
+                <div id = "editor-container">
+                    <div id = "editor-ruler">
+                        <table id = "ruler-lines"> </table>
+                    </div>
+                    <div id = "editor">
+                        <form id = "code-form" method = "POST">
+                            <textarea id = "code" name = "code" oninput="EventService.addLines(this)" onchange="EventService.listErrors(this.value)" placeholder="Enter your code"></textarea>
+                        </form>
+                    </div>
+                </div>
+                <div id = "error-container">
+                    <h3>Problems</h3>
+                    <table id = "error-list-table"></table>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="footer-inner">
+                &copy; <script>document.write(Common.getCopyrightYear()); document.write(" " + SR.__COPYRIGHT_NAME__); </script> <br />
+                All Rights Reserved
+            </div>
+        </div>
+        <script src="events.js"></script>
+    </body>
+</html>
